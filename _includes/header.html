@@ -1,0 +1,54 @@
+<div class='contain-to-grid sticky transparent'>
+  <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
+    <ul class='title-area'>
+      <ul class="socials" style="padding-left: 3%;">
+        <li><a href="https://twitter.com/barbarasoares89"><i class='fa fa-twitter'></i></a></li>
+        <li><a href="https://www.instagram.com/barb.soares/"><i class='fa fa-instagram'></i></a></li>
+        <li><a href="https://www.imdb.com/name/nm4354856/?ref_=fn_al_nm_1"><i class='fa fa-imdb'></i></a></li>
+      </ul>
+
+      <li class="">
+        <h1>
+          <a style= href='{{site.url}}/index.html'>
+            <span>bÁRbARA</span> soARes
+          </a>
+        </h1>
+      </li>
+    </ul>
+    <div id="menu-toggler" class="right">
+      <a href=''>
+        <i class="icon-arrows-hamburger-2"></i>
+      </a>
+    </div>
+    <section class='top-bar-section closed'>
+      <ul class='right', style="padding-top:-50px; background-color: rgba(255, 255, 255, 0.8);">
+
+        {% for item in site.data.nav %}
+          {% if item.section_id == page.section_id %}
+            {% assign active_class = "active" %}
+          {% else %}
+            {% assign active_class = "" %}
+          {% endif %}
+
+          {% if item.children %}
+            <li class="has-dropdown {{active_class}}">
+              <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+              <ul class='dropdown'>
+                {% for child in item.children %}
+                  <li>
+                    <a href="{{site.url}}/{{ child.path }}">{{ child.name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <li class="{{active_class}}">
+              <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+
+      </ul>
+    </section>
+  </nav>
+</div>

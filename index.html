@@ -1,0 +1,72 @@
+---
+layout: default
+section_id: home
+slides:
+- title: ""
+  text: >
+    bÁRbARA <br/> soARes
+  desc: >
+    Bárbara is a Brazillian screenwriter based in Los Angeles. Her writing is genre-driven with strong and diverse female leads and  
+    reflects her attempts to rebuild her identity after the loss of her cultural roots.
+  image: images/wall_headshot.jpeg
+- title: 
+  text: "About" 
+  desc: >
+     A longer biography is coming soon.
+  order: odd
+  image: images/headshot_smile.jpeg
+- title: 
+  order: even
+  text: Work
+  desc: >
+     More information coming soon. 
+  image: images/shining.gifv
+- title: 
+  order: odd
+  text: News
+  desc: >
+      Updates coming soon! 
+  image: images/strangelove.gif
+- title:
+  order: even
+  text: contact
+  image: images/clockwork.gif
+  desc: > 
+    
+    <span style="font-family: 'Major Mono Display'; font-size: 1.8 em;"> MAnAgeR </span><br/>
+    <span style="font-family: Open Sans"> Jasper Grey <br/>
+    Vendetta Management <br/>
+    323.459.5630 <br/></span>
+     <br/><br/> 
+    <span style="font-family: 'Major Mono Display'; font-size: 1.8 em;"> liteRAry Agent </span><br/>
+    <span style="font-family: Open Sans"> Paul Weitzman <br/>
+    Culture Creative Enetertainment<br/>
+    818.722.3034</span>
+    <br/>
+     <br/><br/> 
+    
+---
+
+<div class="full no-padding" style="height: 100vh;">
+  <div id="slides">
+    <div class="slides-container">
+      {% for slide in page.slides %}
+        <div class="slide">
+          <div class="slide-info">
+            <p>{{ slide.title }}</p>
+            <h1 style="color: #cb4335;">{{ slide.text }}</h1>
+            <p style="font-family: Open Sans; color: #fff;">{{slide.desc}}</p>
+          </div>
+          <div class="slide-left" style="background-color: #3c3c3c;">
+          </div>
+          <div class="slide-right" style="background: url({{ slide.image }}) center center no-repeat;background-size: cover;">
+          </div>
+      </div>
+      {% endfor %}
+    </div>
+    <nav class="slides-navigation">
+      <a href="#" class="next"><i class="icon-arrows-slim-right"></i></a>
+      <a href="#" class="prev"><i class="icon-arrows-slim-left"></i></a>
+    </nav>
+  </div>
+</div>

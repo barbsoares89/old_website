@@ -1,0 +1,10 @@
+- name: Home
+  path: index.html#1
+- name: About
+  path: index.html#2
+- name: woRk
+  path: index.html#3
+- name: news
+  path: index.html#4
+- name: contAct
+  path: index.html#5
