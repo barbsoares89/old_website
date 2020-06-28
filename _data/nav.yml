@@ -2,9 +2,7 @@
   path: 1
 - name: About
   path: 2
-- name: woRk
-  path: 3
 - name: news
-  path: 4
+  path: 3
 - name: contAct
-  path: 5
+  path: 4
