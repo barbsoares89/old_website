@@ -1,10 +1,10 @@
 - name: Home
-  path: index.html#1
+  path: 1
 - name: About
-  path: index.html#2
+  path: 2
 - name: woRk
-  path: index.html#3
+  path: 3
 - name: news
-  path: index.html#4
+  path: 4
 - name: contAct
-  path: index.html#5
+  path: 5
