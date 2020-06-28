@@ -7,13 +7,13 @@
 
 # Site settings
 title: Bárbara Soares
-email: barbsoares89@gmail.com
+email: thebarbsoares@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Bárbara Soares | Screenwriter
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://barbsoares89.github.io" # the base hostname & protocol for your site
 twitter_username: barbsoares89
-# github_username:  jekyll
+github_username:  barbsoares89
 
 # Build settings
 markdown: kramdown
