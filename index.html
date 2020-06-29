@@ -6,7 +6,7 @@ slides:
   text: >
     bÁRbARA <br/> soARes
   desc: |
-      Bárbara Soares is a Brazilian writer based in Los Angeles. A proud Latinx immigrant, she writes genre-driven fare from the perspective of the outsider.
+      Bárbara soares is a Brazilian writer based in Los Angeles. A proud Latinx immigrant, she writes genre-driven fare from the perspective of the outsider.
   image: images/wall_headshot.jpeg
 - title: 
   text: "About" 
@@ -56,12 +56,12 @@ slides:
     
 ---
 
-<div class="full no-padding">
+<div class="full no-padding" style="height: 100vh;">
   <div id="slides">
     <div class="slides-container">
       {% for slide in page.slides %}
-        <div class="slide">
-          <div class="slide-info" style="max-height: 600px;">
+        <div class="slide" style="height: 100vh;">
+          <div class="slide-info" style="max-height: 100vh;">
             <p>{{ slide.title }}</p>
             <h1 style="color: #cb4335;">{{ slide.text }}</h1>
             <div style="text-align: justify; overflow-y:scroll; width: 90%; height: 70vh;">

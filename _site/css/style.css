@@ -791,7 +791,6 @@ nav.wrapper {
     font-size: 66px;
     letter-spacing: 4px;
     opacity: 0;
-    overflow-y: auto;
     -webkit-transform: translateY(-100px);
     -moz-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
