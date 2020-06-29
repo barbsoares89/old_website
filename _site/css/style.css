@@ -990,7 +990,7 @@ nav.wrapper {
     text-align: center; }
 
 .fullscreen {
-  height:  100%;/* 100vh; */
+  height:  100vh;
 }
   .fullscreen .slide-info {
     text-align: center;
