@@ -11,7 +11,7 @@ slides:
 - title: 
   text: "About" 
   desc: |
-     <span style="font-size: 0.75em;">
+     <span style="font-size: 0.7em;">
       <i style="padding-left:20px;"></i>Bárbara Soares was born and raised in Brazil, spent a few years in the UK as a teenager, and made the move to America on her own at 18 to “pursue the dream.” She is an alum of the Florida State University Film School and The UCLA MFA Screenwriting program and is currently a staff writer on the Apple+ show <i>Ghostwriter</i>.
      <br/><br/>
        <i style="padding-left:20px;"></i>Bárbara works in the genre space and loves everything sci-fi, mystery, and supernatural. Her stories always feature strong and diverse female leads and usually tackle questions of identity, culture, and (dis)connection.
@@ -61,10 +61,13 @@ slides:
     <div class="slides-container">
       {% for slide in page.slides %}
         <div class="slide">
-          <div class="slide-info">
+          <div class="slide-info" style="max-height: 600px;">
             <p>{{ slide.title }}</p>
             <h1 style="color: #cb4335;">{{ slide.text }}</h1>
-            <p style="font-family: Open Sans; color: #fff;">{{slide.desc}}</p>
+            <div style="text-align: justify; overflow-y:scroll; width: 90%; height: 70vh;">
+            <span style="font-family: Open Sans; color: #fff;">{{slide.desc}}</span>
+            </div>
+
           </div>
           <div class="slide-left" style="background-color: #3c3c3c;">
           </div>
